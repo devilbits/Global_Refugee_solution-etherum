@@ -93,8 +93,8 @@ miner.start()
 ```
 truffle migrate --reset
 ```
-7. Copy deployed contract address (of Buy) from truffle migrate window and replace in index.js file (line 22). Save file.
-8. In original terminal window, start server.
+7. 
+8. Got to src folder open terminal window, start server typring npm start.
 ```
 npm start
 ```
