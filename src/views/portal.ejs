@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	
+<style>
+  body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #BD5D38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+  
+</style>
+
+  <!-- Bootstrap core CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        
+         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/images/profile.png" alt="">
+       
+
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+
+          <a class="nav-link js-scroll-trigger" href="#"><%=name %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#food">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#accomadation">Accomadation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#cloths">cloths</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#medicine">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+      <div class="w-100">
+        <h1 class="mb-0">Name:
+          <span class="text-primary"><%=name %></span>
+        </h1>
+        <div class="subheading mb-5">Country:
+          <span class="text-primary"><%=country%></span>
+        </div>
+        <p class="lead mb-5">Address:<%=address%></p>
+        <p class="lead mb-5" id="blnc">Balance:<%=balance%> tokens</p>
+        
+      </div>
+    </section>
+
+    
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="food">
+      <div class="w-100">
+      	<h1 class="mb-0"> Food</h1>
+        <div class="subheading mb-5">Your Address:
+          <span class="text-primary"><%=address%></span>
+        </div>
+        <p class="lead mb-5">click to spend token for food</p>
+        <button id="food" type="submit" class="btn btn-primary" onclick="food(this.value)" value="20">20</button>
+        <button id="food" type="submit" class="btn btn-primary" onclick="food(this.value)" value="35">35</button>
+        <button id="food" type="submit" class="btn btn-primary" onclick="food(this.value)" value="10">10</button>
+        <button id="food" type="submit" class="btn btn-primary" onclick="food(this.value)" value="50">50</button>
+        
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="accomadation">
+      <div class="w-100">
+      	<h1 class="mb-0"> Accomadation</h1>
+        <div class="subheading mb-5">Your Address:
+          <span class="text-primary"><%=address%></span>
+        </div>
+        <p class="lead mb-5">click to spend token for monthly accomadation </p>
+        <button class="btn btn-primary" onclick="accomadation(this.value)" value="100">100</button>
+        <button class="btn btn-primary" onclick="accomadation(this.value)" value="200">200</button>
+        <button class="btn btn-primary" onclick="accomadation(this.value)" value="350">350</button>
+        <button class="btn btn-primary" onclick="accomadation(this.value)" value="500">500</button>
+        
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="cloths">
+      <div class="w-100">
+      	<h1 class="mb-0"> Cloths</h1>
+        <div class="subheading mb-5">Your Address:
+          <span class="text-primary"><%=address%></span>
+        </div>
+        <p class="lead mb-5">click to spend token for cloths</p>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="50">50</button>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="80">80</button>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="100">100</button>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="200">200</button>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="250">250</button>
+        <button class="btn btn-primary" onclick="cloths(this.value)" value="400">400</button>
+        
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="medicine">
+      <div class="w-100">
+      	<h1 class="mb-0"> Food</h1>
+        <div class="subheading mb-5">Your Address:
+          <span class="text-primary"><%=address%></span>
+        </div>
+        <p class="lead mb-5">click to spend token for medicine</p>
+        <button class="btn btn-primary" onclick="medicine(this.value)" value="10">10</button>
+        <button class="btn btn-primary" onclick="medicine(this.value)" value="15">15</button>
+        <button class="btn btn-primary" onclick="medicine(this.value)" value="25">25</button>
+        <button class="btn btn-primary" onclick="medicine(this.value)" value="30">30</button>
+        
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+      	<h1 class="mb-0"> Food</h1>
+        <div class="subheading mb-5">Your Address:
+          <span class="text-primary"><%=address%></span>
+        </div>
+        <p class="lead mb-5">click to spend token for Education</p>
+        <button class="btn btn-primary" onclick="education(this.value)" value="500">500</button>
+        <button class="btn btn-primary" onclick="education(this.value)" value="750">750</button>
+        <button class="btn btn-primary" onclick="education(this.value)" value="900">900</button>
+        <button class="btn btn-primary" onclick="education(this.value)" value="1200">1200</button>
+        
+      </div>
+    </section>
+
+         <input style="display:none" type="text" id="test" value=<%=address%> name="kkk">
+
+    
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+ <script >
+ 	function food(value){
+        let data = 'food';
+        let addrs = document.getElementById('test').value;
+
+$.post('/refugee/tokenSpend',{data:data,value:value,addrs:addrs},(data)=>{if(data.status==true){alert(data.value+' tokens deducted from your account. Service name='+data.data+',Service Address='+data.to);let bal = <%=balance%>;bal = bal-value;document.getElementById('blnc').value='Balance '+bal+' tokens';
+
+}})
+ 		
+ 	}
+ 	function accomadation(value){
+ 		let data = 'accomadation';
+ 		let addrs = document.getElementById('test').value;
+ 		$.post('/refugee/tokenSpend',{data:data,value:value,addrs:addrs},(data)=>{if(data.status==true){alert(data.value+' tokens deducted from your account. Service name='+data.data+',Service Address='+data.to);let bal = <%=balance%>;bal = bal-value;document.getElementById('blnc').value='Balance '+bal+' tokens';
+}})
+ 	}
+ 	function cloths(value){
+ 		let data = 'cloths';
+ 		let addrs = document.getElementById('test').value;
+ 		$.post('/refugee/tokenSpend',{data:data,value:value,addrs:addrs},(data)=>{if(data.status==true){alert(data.value+' tokens deducted from your account. Service name='+data.data+',Service Address='+data.to);let bal = <%=balance%>;bal = bal-value;document.getElementById('blnc').value='Balance '+bal+' tokens';
+}})
+ 	}
+ 	function medicine(value){
+ 		let data = 'medicine';
+ 		let addrs = document.getElementById('test').value;
+ 		$.post('/refugee/tokenSpend',{data:data,value:value,addrs:addrs},(data)=>{if(data.status==true){alert(data.value+' tokens deducted from your account. Service name='+data.data+',Service Address='+data.to);let bal = <%=balance%>;bal = bal-value;document.getElementById('blnc').value='Balance '+bal+' tokens';
+}})
+ 	}
+ 	function education(value){
+ 		let data = 'education';
+ 		let addrs = document.getElementById('test').value;
+ 		$.post('/refugee/tokenSpend',{data:data,value:value,addrs:addrs},(data)=>{if(data.status==true){alert(data.value+' tokens deducted from your account. Service name='+data.data+',Service Address='+data.to);let bal = <%=balance%>;bal = bal-value;document.getElementById('blnc').value='Balance '+bal+' tokens';
+}})
+ 	}
+
+
+ </script>
+
+</body>
+
+</html>

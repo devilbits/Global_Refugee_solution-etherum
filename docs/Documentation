@@ -1,0 +1,7 @@
+Only one account representing govt is required to deploy the contract,and same address is used as coin base.
+The refugee can create account by enetering personal details.The account is automatically funded with 10000 tokens.
+since no ether is available in the refugee account coin base is reuired to call functions that reuire gas.
+refugee can log in to his personal account and use service by paying tokens.
+refugee transaction can be viewd by entering refugee's register number.
+
+ERC20 token was chosen for the project.
